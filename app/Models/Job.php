@@ -14,7 +14,11 @@ class Job extends Model
     protected $fillable = [
         'title',
         'salary',
+        'employer_id',
     ];
+
+    // alternative to fillable property - choose which fields to protect
+    // protected $guarded = [];
 
     public function employer()
     {

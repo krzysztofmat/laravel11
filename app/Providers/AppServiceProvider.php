@@ -23,6 +23,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::preventLazyLoading();
 
+        // Model::preventSilentlyDiscardingAttributes(false);
+
         // Paginator::useBootstrapFive();
     }
 }
